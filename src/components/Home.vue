@@ -24,9 +24,9 @@ export default {
       text: 'Här visas några exempel på funktionalitet i Vue.js',
       isShown: false,
       products: [
-        {id: 1, name: 'iPhone7'},
-        {id: 2, name: 'iPhone6'},
-      ]
+        { id: 1, name: 'iPhone7' },
+        { id: 2, name: 'iPhone6' },
+      ],
     };
   },
   methods: {
