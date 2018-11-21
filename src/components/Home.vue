@@ -8,12 +8,21 @@
         <p id="text" v-show="isShown">Lorem ipsum dolor sit amet...</p>
         <div class="product-container">
             <div>
-                <div class="product"
+                <template
                   v-for="product in products"
-                  :key="product.name"
                 >
-                  {{ product.name }}
-                </div>
+                    <div class="product" :key="product">
+                        <div class="card-header" :key="product.name">
+                            {{product.name}}
+                        </div>
+                        <div class="card-content" :key="product.description">
+                            {{product.description}}
+                        </div>
+                        <div class="card-footer" :key="product.price">
+                            {{product.price}} {{currency}}
+                        </div>
+                    </div>
+                </template>
             </div>
         </div>
     </div>
@@ -28,9 +37,10 @@ export default {
       counter: 1,
       text: 'Här visas några exempel på funktionalitet i Vue.js',
       isShown: false,
+      currency: 'kr',
       products: [
-        { id: 1, name: 'iPhone7' },
-        { id: 2, name: 'iPhone6' },
+        { id: 1, name: 'iPhone7', description: 'En suverän telefon', price: 6890 },
+        { id: 2, name: 'iPhone6', description: 'En bra telefon', price: 4590 },
       ],
     };
   },
