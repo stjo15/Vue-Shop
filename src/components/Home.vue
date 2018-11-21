@@ -8,7 +8,11 @@
         <p id="text" v-show="isShown">Lorem ipsum dolor sit amet...</p>
         <div class="product-container">
             <ul>
-                <li v-for="product in products">{{ product.name }}</li>
+                <li v-for="product in products"
+                  :key="product.name"
+                >
+                  {{ product.name }}
+                </li>
             </ul>
         </div>
     </div>
