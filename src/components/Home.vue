@@ -6,6 +6,11 @@
         <p>{{counter}}</p>
         <div><button @click="toggle">Klicka här</button></div>
         <p id="text" v-show="isShown">Lorem ipsum dolor sit amet...</p>
+        <div class="product-container">
+            <ul>
+                <li for="product in products">{{product.name}}</li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -18,6 +23,10 @@ export default {
       counter: 1,
       text: 'Här visas några exempel på funktionalitet i Vue.js',
       isShown: false,
+      products: [
+        {id: 1, name: 'iPhone7'},
+        {id: 2, name: 'iPhone6'},
+      ]
     };
   },
   methods: {
