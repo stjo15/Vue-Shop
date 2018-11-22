@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Hem',
   data() {
     return {
       msg: 'Välkommen till Designeras demobutik byggd i Vue.js!',
