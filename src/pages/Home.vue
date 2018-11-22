@@ -1,6 +1,8 @@
 <template>
     <div id="home">
-        <h1>{{msg}}</h1>
+        <div class="title">
+            <h1>{{msg}}</h1>
+        </div>
         <div>{{text}}</div>
         <button v-on:click="incrementCounter">++</button>
         <p>{{counter}}</p>
