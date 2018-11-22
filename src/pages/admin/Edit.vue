@@ -9,6 +9,9 @@
 <script>
 export default {
   name: 'Edit',
+  created() {
+    console.log(this.$route.params.id) // prints value of :id
+  }
 };
 </script>
 

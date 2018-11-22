@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-/* import HelloWorld from '@/components/HelloWorld'; */
+
 import Hem from '@/pages/Home';
 import Varukorg from '@/pages/Cart';
-// import Admin from '@/pages/Admin';
+// import Form from '@/components/Form';
 
 // Admin Components
 import Index from '@/pages/admin/Index';
@@ -50,4 +50,3 @@ export default new Router({
     },
   ],
 });
-

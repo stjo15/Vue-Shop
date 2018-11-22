@@ -27,12 +27,17 @@
                 </template>
             </div>
         </div>
+        <div class="form">
+            <Form></Form>
+        </div>
     </div>
 </template>
 
 <script>
+import Form from "../components/Form";
 export default {
   name: 'Hem',
+  components: {Form},
   data() {
     return {
       msg: 'Välkommen till Designeras demobutik byggd i Vue.js!',
@@ -53,6 +58,10 @@ export default {
     toggle() {
       // Toggles control property
       this.isShown = !this.isShown;
+    },
+    saveProduct() {
+      // prints all the errors
+      console.log(this.errors);
     },
   },
 };
