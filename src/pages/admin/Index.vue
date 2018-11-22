@@ -19,6 +19,7 @@
 <style>
     .admin-menu {
         float: left;
+        padding: 30px 0 30px 0;
     }
     .admin-menu a {
         display: block;
