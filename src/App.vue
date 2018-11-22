@@ -23,5 +23,5 @@ export default {
 </script>
 
 <style
-  src='../src/main.css'>
+  src='../static/css/main.css'>
 </style>
