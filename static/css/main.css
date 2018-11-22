@@ -7,6 +7,14 @@
     margin-top: 60px;
 }
 
+.container {
+    width: 970px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 .product-container {
     width: 80vw;
     max-width: 1300px;

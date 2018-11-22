@@ -17,6 +17,9 @@
 </template>
 
 <style>
+    .admin-menu {
+        float: left;
+    }
     .admin-menu a {
         display: block;
         background: #EFDB06;
@@ -33,9 +36,5 @@
     .admin-menu a:hover {
         text-decoration: none;
         transform: scaleX(1.02);
-    }
-    .admin-new, .admin-products {
-        border-bottom: 2px solid #F5F5F5;
-        padding: 30px 0;
     }
 </style>
